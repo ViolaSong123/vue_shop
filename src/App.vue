@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    hhw
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,19 +8,25 @@
 
 export default {
   name: 'app',
+  data () {
+    return {
+      actived: !0
+    }
+  },
   components: {
 
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang='less' scoped>
+#app，body{
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+.active{
+  color:red;
 }
 </style>
