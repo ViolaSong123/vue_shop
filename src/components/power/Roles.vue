@@ -22,7 +22,7 @@
 
     <!-- 对话框 -->
     <el-dialog title="修改角色信息" :visible.sync="dialogFormVisible">
-      <el-form :model="editForm" :rules="editRules" ref="editForm" label-width="200px" >
+      <el-form :model="editForm" :rules="editRules" ref="editForm" label-width="100px">
         <el-form-item label="角色名称" :label-width="formLabelWidth" prop='roleName'>
           <el-input v-model="editForm.roleName" autocomplete="off"></el-input>
         </el-form-item>
