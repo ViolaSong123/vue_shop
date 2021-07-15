@@ -25,7 +25,9 @@ import {
   Pagination,
   Dialog,
   MessageBox,
-  Tag
+  Tag,
+  Loading,
+  Cascader
 } from 'element-ui'
 Vue.use(Button)
 Vue.use(Form)
@@ -53,3 +55,5 @@ Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
 Vue.use(Tag)
+Vue.use(Loading)
+Vue.use(Cascader)

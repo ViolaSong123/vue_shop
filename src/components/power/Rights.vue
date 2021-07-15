@@ -22,8 +22,8 @@
         <template slot-scope="scope">
           <el-tooltip class="item" effect="dark" content="提示文字" placement="top-start">
             <el-tag v-if="scope.row.level == 0" type="success">一级权限</el-tag>
-            <el-tag v-if="scope.row.level == 1" type="info">二级权限</el-tag>
-            <el-tag v-if="scope.row.level == 2" type="warning">三级权限</el-tag>
+            <el-tag v-else-if="scope.row.level == 1" type="info">二级权限</el-tag>
+            <el-tag v-else type="warning">三级权限</el-tag>
           </el-tooltip>
         </template>
       </el-table-column>
