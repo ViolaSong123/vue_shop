@@ -18,7 +18,6 @@
           <el-button size="mini" type="warning" icon="el-icon-setting">分配权限</el-button>
         </template>
       </el-table-column>
-
     </el-table>
   </div>
 </template>
@@ -39,6 +38,7 @@ export default {
     },
     editRole(info) {
       console.log(info)
+      console.log(new Date())
     }
   }
 }
