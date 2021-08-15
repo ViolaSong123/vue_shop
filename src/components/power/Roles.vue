@@ -39,6 +39,7 @@ export default {
     },
     editRole(info) {
       console.log(info)
+      console.log(123)
     }
   }
 }
